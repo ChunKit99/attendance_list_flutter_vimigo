@@ -451,11 +451,14 @@ class AttendanceDetail extends StatelessWidget {
       body: Container(
         margin: const EdgeInsets.all(10),
         child: Center(
-          child: Column(
-            children: [
-              Text('Phone: ${record.ph}'),
-              Text('Check-in time: ${record.time}'),
-            ],
+          child: Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text('Phone: ${record.ph}'),
+                Text('Check-in time: ${record.time}'),
+              ],
+            ),
           ),
         ),
       ),
